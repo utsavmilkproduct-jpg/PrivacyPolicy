@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Delete My Account – Utsav Dairy</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f9f9f9;
+      color: #222;
+      line-height: 1.8;
+    }
+    header {
+      background: #1a73e8;
+      color: white;
+      padding: 36px 24px;
+      text-align: center;
+    }
+    header h1 { font-size: 2rem; margin-bottom: 6px; }
+    header p { font-size: 0.95rem; opacity: 0.85; }
+    .container {
+      max-width: 760px;
+      margin: 40px auto;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      padding: 48px 52px;
+    }
+    h2 {
+      font-size: 1.15rem;
+      color: #1a73e8;
+      margin: 32px 0 10px;
+      border-left: 4px solid #1a73e8;
+      padding-left: 12px;
+    }
+    p { margin-bottom: 12px; }
+    ul { margin: 8px 0 12px 24px; }
+    ul li { margin-bottom: 6px; }
+
+    /* Warning box */
+    .warning {
+      background: #fff4e5;
+      border-left: 4px solid #f59e0b;
+      border-radius: 6px;
+      padding: 16px 20px;
+      margin: 24px 0;
+    }
+    .warning strong { color: #b45309; }
+
+    /* Steps */
+    .steps { counter-reset: step; margin: 16px 0; }
+    .step {
+      counter-increment: step;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      margin-bottom: 18px;
+    }
+    .step-num {
+      min-width: 36px;
+      height: 36px;
+      background: #1a73e8;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.95rem;
+      flex-shrink: 0;
+    }
+    .step-content { padding-top: 6px; }
+
+    /* Email button */
+    .email-btn {
+      display: inline-block;
+      margin: 20px 0;
+      background: #1a73e8;
+      color: white;
+      text-decoration: none;
+      padding: 14px 32px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 1rem;
+      letter-spacing: 0.3px;
+      transition: background 0.2s;
+    }
+    .email-btn:hover { background: #1558c0; }
+
+    /* Data table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 0.92rem;
+    }
+    th {
+      background: #e8f0fe;
+      color: #1a73e8;
+      text-align: left;
+      padding: 10px 14px;
+      font-weight: 600;
+    }
+    td { padding: 10px 14px; border-bottom: 1px solid #f0f0f0; }
+    tr:last-child td { border-bottom: none; }
+
+    .badge-del { color: #dc2626; font-weight: 600; }
+    .badge-keep { color: #d97706; font-weight: 600; }
+
+    .last-updated {
+      text-align: center;
+      font-size: 0.88rem;
+      color: #888;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #eee;
+    }
+    a { color: #1a73e8; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🥛 Utsav Dairy</h1>
+  <p>Account & Data Deletion Request</p>
+</header>
+
+<div class="container">
+
+  <p>We respect your right to control your personal data. You can request deletion of your account and all associated data at any time by following the steps below.</p>
+
+  <div class="warning">
+    <strong>⚠️ Please read before proceeding:</strong> Account deletion is permanent and cannot be undone. All your order history, profile information, and saved preferences will be removed.
+  </div>
+
+  <!-- ── HOW TO REQUEST ── -->
+  <h2>How to Request Account Deletion</h2>
+
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-content">
+        <strong>Send an email</strong> to our support team at
+        <a href="mailto:utsavmilkproducts@gmail.com">utsavmilkproducts@gmail.com</a>
+        using the button below, or from the email address linked to your account.
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-content">
+        <strong>Use the subject line:</strong> <em>"Account Deletion Request"</em>
+        and include your registered phone number in the message body.
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-content">
+        <strong>We will verify</strong> your identity and process the request
+        within <strong>7 business days</strong>. You will receive a confirmation
+        once deletion is complete.
+      </div>
+    </div>
+  </div>
+
+  <a class="email-btn"
+     href="mailto:utsavmilkproducts@gmail.com?subject=Account%20Deletion%20Request&body=Hello%2C%0A%0AI%20would%20like%20to%20request%20deletion%20of%20my%20Utsav%20Dairy%20account.%0A%0ARegistered%20Phone%20Number%3A%20%0A%0AThank%20you.">
+    ✉️ &nbsp;Request Account Deletion
+  </a>
+
+  <!-- ── WHAT GETS DELETED ── -->
+  <h2>What Data Gets Deleted</h2>
+  <table>
+    <tr>
+      <th>Data Type</th>
+      <th>Action</th>
+    </tr>
+    <tr>
+      <td>Name, phone number, profile photo</td>
+      <td class="badge-del">Permanently deleted</td>
+    </tr>
+    <tr>
+      <td>Delivery address & location data</td>
+      <td class="badge-del">Permanently deleted</td>
+    </tr>
+    <tr>
+      <td>Account login credentials (Firebase Auth)</td>
+      <td class="badge-del">Permanently deleted</td>
+    </tr>
+    <tr>
+      <td>Saved preferences & app settings</td>
+      <td class="badge-del">Permanently deleted</td>
+    </tr>
+    <tr>
+      <td>Order history & transaction records</td>
+      <td class="badge-keep">Retained for 90 days (legal & accounting requirements)</td>
+    </tr>
+    <tr>
+      <td>Payment records (Razorpay)</td>
+      <td class="badge-keep">Retained as required by financial regulations</td>
+    </tr>
+  </table>
+
+  <!-- ── TIMELINE ── -->
+  <h2>Deletion Timeline</h2>
+  <ul>
+    <li>Requests are processed within <strong>7 business days</strong></li>
+    <li>You will receive an email confirmation once your data has been deleted</li>
+    <li>Some data may be retained for up to <strong>90 days</strong> for legal and financial compliance before being permanently purged</li>
+  </ul>
+
+  <!-- ── CONTACT ── -->
+  <h2>Contact Us</h2>
+  <p>If you have any questions about your data or this process, reach out to us:</p>
+  <ul>
+    <li><strong>Email:</strong> <a href="mailto:utsavmilkproducts@gmail.com">utsavmilkproducts@gmail.com</a></li>
+    <li><strong>App:</strong> Utsav Dairy</li>
+  </ul>
+
+  <p class="last-updated">Last Updated: June 2025</p>
+
+</div>
+</body>
+</html>
