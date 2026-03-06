@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy – Utsav Dairy</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f9f9f9;
+      color: #222;
+      line-height: 1.8;
+    }
+    header {
+      background: #1a73e8;
+      color: white;
+      padding: 36px 24px;
+      text-align: center;
+    }
+    header h1 { font-size: 2rem; margin-bottom: 6px; }
+    header p { font-size: 0.95rem; opacity: 0.85; }
+    .container {
+      max-width: 860px;
+      margin: 40px auto;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      padding: 48px 52px;
+    }
+    h2 {
+      font-size: 1.2rem;
+      color: #1a73e8;
+      margin: 32px 0 10px;
+      border-left: 4px solid #1a73e8;
+      padding-left: 12px;
+    }
+    p { margin-bottom: 12px; }
+    ul { margin: 8px 0 12px 24px; }
+    ul li { margin-bottom: 6px; }
+    .badge {
+      display: inline-block;
+      background: #e8f0fe;
+      color: #1a73e8;
+      border-radius: 4px;
+      padding: 2px 10px;
+      font-size: 0.85rem;
+      margin-bottom: 8px;
+    }
+    .last-updated {
+      text-align: center;
+      font-size: 0.88rem;
+      color: #888;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #eee;
+    }
+    a { color: #1a73e8; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🥛 Utsav Dairy</h1>
+  <p>Privacy Policy</p>
+</header>
+
+<div class="container">
+
+  <p>Welcome to <strong>Utsav Dairy</strong>. This Privacy Policy explains how we collect, use, and protect your personal information when you use our dairy products delivery application. By using the app, you agree to the practices described in this policy.</p>
+
+  <h2>1. Information We Collect</h2>
+  <p>We collect the following types of information to provide and improve our services:</p>
+
+  <p><span class="badge">Personal Information</span></p>
+  <ul>
+    <li>Name, email address, and phone number (collected during account registration via Firebase Authentication)</li>
+    <li>Delivery address and location data (used to process and deliver your orders)</li>
+    <li>Profile photo (if you choose to upload one via the image picker)</li>
+  </ul>
+
+  <p><span class="badge">Order & Transaction Information</span></p>
+  <ul>
+    <li>Order history, product preferences, and delivery schedules</li>
+    <li>Payment transaction details processed through <strong>Razorpay</strong> (we do not store raw card or banking details — these are handled securely by Razorpay)</li>
+  </ul>
+
+  <p><span class="badge">Device & Usage Information</span></p>
+  <ul>
+    <li>Device identifiers, crash logs, and performance data (via Firebase Crashlytics)</li>
+    <li>Push notification tokens (via Firebase Cloud Messaging)</li>
+    <li>App usage analytics to improve app performance</li>
+  </ul>
+
+  <p><span class="badge">Location Information</span></p>
+  <ul>
+    <li>Your precise or approximate location is collected (using Geolocator and Geocoding) to determine your delivery area and show relevant products and schedules</li>
+    <li>Location is only accessed when the app is in use and with your permission</li>
+  </ul>
+
+  <h2>2. How We Use Your Information</h2>
+  <ul>
+    <li>To process and fulfill your dairy product orders and deliveries</li>
+    <li>To authenticate your identity and maintain account security</li>
+    <li>To send order confirmations, delivery updates, and promotional notifications</li>
+    <li>To generate and share PDF invoices for your purchases</li>
+    <li>To detect and resolve app crashes and technical issues</li>
+    <li>To improve app performance and user experience</li>
+    <li>To process payments securely via Razorpay</li>
+    <li>To print order receipts on Bluetooth thermal printers (if used by delivery staff)</li>
+  </ul>
+
+  <h2>3. Third-Party Services</h2>
+  <p>Our app uses the following third-party services which may collect and process data according to their own privacy policies:</p>
+  <ul>
+    <li><strong>Firebase (Google)</strong> – Authentication, Cloud Firestore database, Cloud Storage, Cloud Functions, Push Notifications (FCM), Crashlytics, and App Check</li>
+    <li><strong>Razorpay</strong> – Secure payment processing</li>
+    <li><strong>Google Geocoding API</strong> – Converting location coordinates to readable addresses</li>
+  </ul>
+  <p>We encourage you to review the privacy policies of these third-party providers.</p>
+
+  <h2>4. Data Storage & Security</h2>
+  <ul>
+    <li>Your data is stored securely on <strong>Google Firebase</strong> infrastructure with encryption in transit and at rest</li>
+    <li>We use <strong>Firebase App Check</strong> to protect our backend from unauthorized access</li>
+    <li>Local preferences and settings are stored on your device using GetStorage</li>
+    <li>We do not sell, rent, or trade your personal information to third parties</li>
+  </ul>
+
+  <h2>5. Permissions We Request</h2>
+  <ul>
+    <li><strong>Location</strong> – To determine your delivery address and service area</li>
+    <li><strong>Camera / Photo Library</strong> – To upload your profile photo or product images</li>
+    <li><strong>Notifications</strong> – To send you order updates and delivery alerts</li>
+    <li><strong>Bluetooth</strong> – To connect to thermal printers for order receipts (delivery staff only)</li>
+    <li><strong>Internet</strong> – Required for all core app functionality</li>
+  </ul>
+  <p>All permissions are requested only when needed and can be managed through your device settings.</p>
+
+  <h2>6. Children's Privacy</h2>
+  <p>Our app is not directed to children under the age of 13. We do not knowingly collect personal information from children. If you believe a child has provided us with personal information, please contact us and we will promptly delete it.</p>
+
+  <h2>7. Data Retention</h2>
+  <p>We retain your personal data as long as your account is active or as needed to provide our services. You may request deletion of your account and associated data by contacting us. Order records may be retained for legal and accounting purposes as required by applicable law.</p>
+
+  <h2>8. Your Rights</h2>
+  <p>You have the right to:</p>
+  <ul>
+    <li>Access and review your personal data stored in your account</li>
+    <li>Update or correct your personal information at any time</li>
+    <li>Request deletion of your account and personal data</li>
+    <li>Opt out of promotional notifications through the app settings</li>
+  </ul>
+
+  <h2>9. Changes to This Policy</h2>
+  <p>We may update this Privacy Policy from time to time. We will notify you of significant changes via the app or email. Continued use of the app after changes are posted constitutes your acceptance of the updated policy.</p>
+
+  <h2>10. Contact Us</h2>
+  <p>If you have any questions or concerns about this Privacy Policy or how your data is handled, please contact us at:</p>
+  <ul>
+    <li><strong>App:</strong> Utsav Dairy</li>
+    <li><strong>Email:</strong> support@utsavdairy.com</li>
+  </ul>
+
+  <p class="last-updated">Last Updated: June 2025 &nbsp;|&nbsp; Effective Date: June 2025</p>
+
+</div>
+</body>
+</html>
